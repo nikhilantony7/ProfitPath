@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Welcome to Sales Tracker</h1>
+  <nav>
+    <a href="/orders">View Orders</a> | <a href="/analytics">Analytics</a>
+  </nav>
+  <h2>Add New Order</h2>
+  <form method="POST" action="/orders">
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required />
+    <br />
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" required />
+    <br />
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" required />
+    <br />
+    <label for="purchase_price">Purchase Price:</label>
+    <input type="number" id="purchase_price" name="purchase_price" required />
+    <br />
+    <label for="sales_price">Sales Price:</label>
+    <input type="number" id="sales_price" name="sales_price" required />
+    <br />
+    <button type="submit">Add Order</button>
+  </form>
+
+</body>
+</html>
